@@ -4,16 +4,34 @@
 ### I know someone who worries too much.
 
 1. Asking an array of questions which one is most concerned or anxious over.
-![](Images/PseudoCodeMom_152601_Nag.jpg)
+```processing
+  String[] commonQuestions = {
+    "Are you going to the dentist?", 
+    "Do you want to eat with us?", 
+    "Have you switched your \n insurance plan yet?", 
+    "Have you spoken \n with your sister?"
+  };
+```
 
 2. You are in a fairly good relationship with the other person. 
-![](Images/PseudoCodeMom_152601_Nag01 copy.jpg)
+
 
 3. And that person is still alive.
-![](Images/PseudoCodeMom_152601_Nag02 copy.jpg)
+
 
 4. That other person will continuely ask the same series of question. 
-![](Images/PseudoCodeMom_152601_Nag03 copy.jpg)
+```processing
+text(question, width/2, height/2);  
+```
 
 5. Whether I answer yes or no, that other person will always ask the same series of questions repeatedly. 
-![](Images/PseudoCodeMom_152601_Nag04 copy.jpg)
+```processing
+if( (passedTime > totalTime) && (passedTime < totalTime2) ){
+        // background(0,0,255);
+    text(usualResponse, width/2, 2*height/3);
+   } else if ((passedTime > totalTime2) && (passedTime<totalTime3)) {
+        println(angryResponse);
+        text(angryResponse, width/2, 2*height/3);
+    }
+        
+  ```
